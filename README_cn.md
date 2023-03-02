@@ -26,3 +26,11 @@ Cloudflare 提供了API接口，可以通过接口的方式去管理您的DNS域
 
 # 使用
 
+``` bash
+./ddns-cloudflare run --conf /yourfolder/config.json
+```
+
+建议创建定时任务来执行，例如crontab等。
+```
+*/15 * * * * ~/ddns-cloudflare run > ~/cf_ddns.log
+```

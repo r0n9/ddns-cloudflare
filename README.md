@@ -24,3 +24,11 @@ The image below shows the high-level diagram of how the Cloudflare dynamic DNS u
 
 # Usage
 
+``` bash
+./ddns-cloudflare run --conf /yourfolder/config.json
+```
+
+You can schedule a cron job in Linux.
+```
+*/15 * * * * ~/ddns-cloudflare run > ~/cf_ddns.log
+```
